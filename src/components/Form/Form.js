@@ -41,21 +41,28 @@ class Form extends Component {
           onChange={(event) => this.handleChange(event)}
         />
 
-        <input
-          type="text"
-          placeholder="stance"
-          name="stance"
-          value={this.state.stance}
-          onChange={(event) => this.handleChange(event)}
-        />
+        <select name="stance" value={this.state.stance} onChange={(event) => this.handleChange(event)}>
+          <option>--Please choose a stance--</option>
+          <option name="stance" value="regular">regular</option>
+          <option name="stance" value="switch">switch</option>
+        </select>
 
-        <input
+        <select name="obstacle" value={this.state.stance} onChange={(event) => this.handleChange(event)}>
+          <option>--Please choose an obstacle--</option>
+          <option name="obstacle" value="flat ground">flat ground</option>
+          <option name="obstacle" value="ledge">ledge</option>
+          <option name="obstacle" value="rail">rail</option>
+          <option name="obstacle" value="stairs">stairs</option>
+          <option name="obstacle" value="pool">pool</option>
+        </select>
+
+        {/* <input
           type="text"
           placeholder="obstacle"
           name="obstacle"
           value={this.state.obstacle}
           onChange={(event) => this.handleChange(event)}
-        />
+        /> */}
 
         <input
           type="text"
