@@ -1,11 +1,12 @@
 import { Component } from 'react';
+import {getTricks} from "../apiCalls.js"
 import './App.css';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      
+      tricks: []
     }
   }
   render() {
