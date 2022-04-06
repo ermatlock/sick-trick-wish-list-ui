@@ -1,5 +1,5 @@
-const getTricks = (address) => {
+const getTricks = () => {
   return fetch("http://localhost:3001/api/v1/tricks")
-  .then(response => response.json())
-}
-export {getTricks}
+  .then((response) => response.json())
+};
+export { getTricks };
