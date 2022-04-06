@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import {getTricks} from "../../apiCalls.js"
-import Tricks from "../Tricks/Tricks" 
+import {getTricks, postTrick} from "../../apiCalls.js"
+import Tricks from "../Tricks/Tricks"
+import Form from "../Form/Form"
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <Form />
         {!this.state.tricks && <h2>You don't have any tricks yet. Add some!</h2>}
         <Tricks tricks={this.state.tricks}/>
       </div>
