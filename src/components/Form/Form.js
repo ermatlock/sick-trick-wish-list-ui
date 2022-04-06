@@ -33,7 +33,7 @@ class Form extends Component {
   render() {
     return (
       <form>
-        <input
+        <input classname="trick-name"
           type="text"
           placeholder="trick"
           name="name"
