@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Form.css";
 
 class Form extends Component {
-  constructor({ addTrick }) {
+  constructor() {
     super();
     this.state = {
       stance: "",
@@ -36,7 +36,7 @@ class Form extends Component {
         <input
           type="text"
           placeholder="trick"
-          name="trick"
+          name="name"
           value={this.state.name}
           onChange={(event) => this.handleChange(event)}
         />
